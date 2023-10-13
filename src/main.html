@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiftie Book Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gabarito&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+
+        :root {
+            --darker-pink: rgb(112, 43, 43);
+            --dark-pink: rgb(158, 57, 57);
+            --light-pink: rgb(247, 139, 139);
+            --very-light-pink: #F7F7F7;
+            --white: rgb(216, 207, 175);
+            --pink: rgb(240, 122, 122);
+        }
+
+        body {
+            font-family: 'Abril Fatface', serif;
+            background-color: var(--white);
+            align-items: center;
+            display: inline;
+            justify-content: center;
+        }
+
+        .titulo{
+            margin-top: 20px;
+            color: var(--dark-pink);
+            font-size: 48px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-bar{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background-color: var(--darker-pink);
+            height: 40px;
+            margin-top: 16px;
+            bottom: 0px;
+            margin-bottom: 0px;
+        }
+
+        .opciones {
+            width: 60%;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Gabarito';
+            color: var(--white);
+        }
+
+        .opciones ul {
+            cursor: pointer;
+            padding: 5px;
+            margin: 3px;
+        }
+
+        .opciones ul:hover {
+            cursor: pointer;
+            border: 1px solid var(--white);
+            border-radius: 20px;
+            color: var(--very-light-pink);
+        }
+
+        .container-bienvenida {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin-left: 72px;
+            height: 80vh;
+            margin-top: 8px;
+            border-radius: 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(https://fox4kc.com/wp-content/uploads/sites/16/2023/07/GettyImages-1474282486.jpg?w=2560&h=1440&crop=1);
+        }
+
+        .texto-bienvenida {
+            width: 44%;
+            height: 264px;
+            border-radius: 30px;
+            margin-left: 138px;
+            margin-top: 80px;
+            color: var(--white);
+        }
+
+        #hola {
+            font-size: 38px;
+            margin-left: 8px;
+            margin-top: 28px;
+            margin-bottom: 10px;
+        }
+
+        #descripcion {
+            margin-left: 8px;
+            font-size: 24px;
+        }
+
+        .imagen-bienvenida {
+            border-radius: 30px;
+            width: 50%;
+        }
+
+        .imagen-bienvenida img {
+            object-fit: cover;
+            height: 370px;
+            width: 600px;
+            border-radius: 30px;
+        }
+
+        .mi-instagram {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 26px;
+        }
+
+        .mi-instagram img {
+            width: 250px;
+            height: 250px;
+            border-radius: 30px;
+            margin: 8px;
+        }
+
+        .mi-instagram button {
+            color: var(--white);
+            margin-left: 18px;
+            border-radius: 10px;
+            width: 100px;
+            height: 30px;
+            font-size: 16px;
+            font-family: 'Gabarito';
+            border: none;
+            background-color: var(--dark-pink);
+        }
+
+        .mi-instagram button {
+            color: var(--white);
+            margin-left: 18px;
+            border-radius: 10px;
+            width: 110px;
+            height: 36px;
+            font-size: 18px;
+            font-family: 'Gabarito';
+            border: none;
+            background-color: var(--dark-pink);
+            cursor: pointer;
+        }
+
+        .mi-instagram button:hover {
+            background-color: var(--white);
+            border: 2px solid var(--dark-pink);
+            color: var(--dark-pink);
+        }
+
+        body {
+            margin: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+
+        <div class="titulo">Swiftie Book Club</div>
+        <nav class="nav-bar">
+            <li class="opciones">
+                <ul class="boton-inicio">
+                    Inicio
+                </ul>
+                <ul class="boton-categorias">
+                    Categorías
+                </ul>
+                <ul class="boton-ver-todo">
+                    Ver todo
+                </ul>
+                <ul class="boton-sector-swiftie">
+                    Sector Swiftie
+                </ul>
+            </li>
+        </nav>
+        <div class="inicio">
+            <div class="container-bienvenida">
+                <div class="texto-bienvenida">
+                    <div id="hola">It's been a long time coming...</div>
+                    <div id="descripcion">En esta página vas a poder encontrar todos esos libros con esas tramas tan específicas que buscas. Ideal para lxs lectores y swifties apasionadxs.</div>
+                </div>
+            </div>
+            <div class="mi-instagram">
+                <img style="margin-left: 68px;" src="./../img/la-noche-que-paramos-el-mundo.jpg" alt="">
+                <img src="./../img/todos-nuestros-veranos.jpg" alt="">
+                <img src="./../img/el-faro-de-los-amores-dormidos.jpg" alt="">
+                <div style="display: block; margin-left: 16px;">
+                    <div style="font-size: 32px; color: var(--dark-pink); margin-left: 18px; margin-bottom: 20px;">¡Seguime en instagram para no perderte ninguna reseña!</div>
+                    <a target="_blank" href="https://www.instagram.com/unasimplelectora_22/"><button>Seguir</button></a>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+</body>
+</html>
