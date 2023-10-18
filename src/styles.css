@@ -1,0 +1,320 @@
+:root {
+    --darker-pink: rgb(112, 43, 43);
+    --dark-pink: rgb(158, 57, 57);
+    --light-pink: rgb(247, 139, 139);
+    --very-light-pink: #F7F7F7;
+    --white: rgb(216, 207, 175);
+    --darker-white: rgb(197, 187, 149);
+    --pink: rgb(240, 122, 122);
+}
+
+body {
+    font-family: 'Abril Fatface', serif;
+    background-color: var(--white);
+    align-items: center;
+    display: inline;
+    justify-content: center;
+}
+
+.titulo {
+    margin-top: 12px;
+    color: var(--dark-pink);
+    font-size: 48px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+}
+
+.nav-bar{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--darker-pink);
+    height: 40px;
+    margin-top: 16px;
+}
+
+.opciones {
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gabarito';
+    color: var(--white);
+}
+
+.opciones ul {
+    cursor: pointer;
+    padding: 5px;
+    margin: 3px;
+}
+
+.opciones ul:hover {
+    cursor: pointer;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    color: var(--very-light-pink);
+}
+
+.container-bienvenida {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: 72px;
+    height: 50vh;
+    margin-top: 12px;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://fox4kc.com/wp-content/uploads/sites/16/2023/07/GettyImages-1474282486.jpg?w=2560&h=1440&crop=1);
+}
+
+.texto-bienvenida {
+    width: 44%;
+    height: 264px;
+    border-radius: 30px;
+    margin-left: 70px;
+    margin-top: 50px;
+    color: var(--white);
+}
+
+#hola {
+    font-size: 38px;
+    margin-left: 8px;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+#descripcion {
+    margin-left: 8px;
+    font-size: 24px;
+}
+
+
+.mi-instagram {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.mi-instagram img {
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    margin: 8px;
+}
+
+.mi-instagram button {
+    color: var(--white);
+    margin-left: 18px;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Gabarito';
+    border: none;
+    background-color: var(--dark-pink);
+}
+
+.mi-instagram button {
+    color: var(--white);
+    margin-left: 18px;
+    border-radius: 10px;
+    width: 110px;
+    height: 36px;
+    font-size: 18px;
+    font-family: 'Gabarito';
+    border: none;
+    background-color: var(--dark-pink);
+    cursor: pointer;
+}
+
+.mi-instagram button:hover {
+    background-color: var(--white);
+    border: 2px solid var(--dark-pink);
+    color: var(--dark-pink);
+}
+
+.encontra-romance {
+    font-family: 'Gabarito';
+    position: absolute;
+    top: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.consigna {
+    font-family: 'Gabarito';
+    font-size: 26px;
+    margin: 20px;
+    margin-top: 0px;
+}
+
+.opciones-tramas button {
+    font-family: 'Gabarito';
+    font-size: 18px;
+    margin: 8px;
+    padding: 8px;
+    width: 190px;
+    height: 62px;
+    border-radius: 30px;
+}
+
+.no-seleccionado {
+    background-color: var(--white);
+    color: var(--darker-pink);
+    border: 2px solid var(--dark-pink);
+}
+
+.opciones-tramas button:hover {
+    background-color: var(--darker-pink);
+    color: var(--white); 
+}
+
+.opciones-tramas button:active {
+    background-color: rgb(65, 16, 16);
+}
+
+
+.boton-importante {
+    background-color: var(--darker-pink);
+    color: var(--white);  
+    font-size: 20px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 30px;
+    width: 200px;
+    height: 40px;
+}
+
+.boton-importante:hover {
+    background-color: var(--white);
+    color: var(--darker-pink);
+    border: 1px solid var(--dark-pink);
+}
+
+.boton-importante:active {
+    color: rgb(65, 16, 16);
+    font-weight: 600;
+    border: 2px solid rgb(65, 16, 16);
+}
+
+.opciones-tramas {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+}
+
+.seleccionado {
+    background-color: var(--darker-pink);
+    color: var(--white); 
+    border: 1px solid var(--white);
+}
+
+
+
+
+.container-libro {
+    width: 350px;
+    border-radius: 20px;
+    background-color: var(--very-light-pink);
+    display: flex;
+    flex-direction: row;
+    margin: 12px;
+    height: 180px;
+    border: 1px solid var(--dark-pink);
+    padding: 6px;
+}
+
+.container-libro .info-libro {
+    font-family: 'Gabarito';
+    margin-left: 18px;
+    margin-right: 8px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+.container-libro .info-libro .autor {
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+.container-libro .info-libro .info-extra {
+    color: rgb(155, 152, 152);
+    font-size: small;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.container-libro:hover {
+    border: 2px solid var(--darker-white);
+}
+
+
+.container-libro img {
+    object-fit: cover;
+    height: 85%;
+    margin: 8px;
+    margin-left: 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.resultados {
+    margin-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.no-resultados {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 180px;
+}
+
+.container-boton-volver {
+    position: absolute;
+    left: 26px;
+    top: 170px;
+}
+
+#volver-link {
+    color: var(--darker-pink);  
+    font-size: 20px;
+    font-family: 'Gabarito';
+    text-decoration: underline;
+}
+
+#volver-link:hover {
+    color: var(--darker-pink);
+    text-decoration: none;
+}
+
+.ocultar {
+    visibility: hidden;
+}
+
+body a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+}
