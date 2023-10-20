@@ -8,21 +8,31 @@ const pantallaBotonesTramas = document.querySelector('.encontra-romance');
 const containerBotonVolver = document.querySelector('.container-boton-volver');
 
 const listaLibros = [
-    {nombre: 'The Love Hypothesis', autor: 'Ali Hazelwood' , generos: ["Fake dating", "Enemies to lovers", "Age gap", ] , img: '../img/the-love-hypothesis.jpg'},
-    {nombre: 'The Spanish Love Deception', autor: 'Elena Armas', generos: ["Fake dating", "Enemies to lovers", "Compañeros de trabajo", "Spicy", "Emprenden un viaje"] , img: '../img/the-spanish-love-deception.jpg'},
-    {nombre: 'Twisted Love', autor: 'Ana Huang', generos: ["Age gap", "Spicy", "Grumpy x Sunshine", "Amor prohibido"] , img: '../img/twisted-love.jpg'},
-    {nombre: 'Twisted Games', autor: 'Ana Huang', generos: ["Guardaespaldas", "Amor prohibido", "Enemies to lovers", "Spicy"] , img: '../img/twisted-games.jpg'},
-    {nombre: 'Twisted Hate', autor: 'Ana Huang', generos: ["Enemies to lovers", "Spicy"] , img: '../img/twisted-hate.jpg'},
+    {nombre: 'The Love Hypothesis', autor: 'Ali Hazelwood' , generos: ["Fake dating", "Enemies to lovers", "Age gap", "Él se enamora primero" ] , img: '../img/the-love-hypothesis.jpg'},
+    {nombre: 'The Spanish Love Deception', autor: 'Elena Armas', generos: ["Fake dating", "Enemies to lovers", "Compañeros de trabajo", "Spicy", "Emprenden un viaje", "Él se enamora primero"] , img: '../img/the-spanish-love-deception.jpg'},
+    {nombre: 'Twisted Love', autor: 'Ana Huang', generos: ["Age gap", "Spicy", "Grumpy x Sunshine", "Amor prohibido", "El mejor amigo del hermano", "Relación en secreto"] , img: '../img/twisted-love.jpg'},
+    {nombre: 'Twisted Games', autor: 'Ana Huang', generos: ["Guardaespaldas", "Amor prohibido", "Enemies to lovers", "Spicy", "Convivencia forzada"] , img: '../img/twisted-games.jpg'},
+    {nombre: 'Twisted Hate', autor: 'Ana Huang', generos: ["Enemies to lovers", "Spicy", "El hermano de la mejor amiga", "Relación en secreto"] , img: '../img/twisted-hate.jpg'},
     {nombre: 'Twisted Lies', autor: 'Ana Huang', generos: ["Mafia", "Spicy", "Age gap"] , img: '../img/twisted-lies.jpg'},
-    {nombre: 'It happened one summer', autor: 'Tessa Bailey', generos: ["Age gap", "Spicy", "Pueblo pequeño"] , img: '../img/it-happened-one-summer.jpg'},
-    {nombre: 'Hook, line and sinker', autor: 'Tessa Bailey', generos: ["Friends to lovers", "Pueblo pequeño", "Spicy"] , img: '../img/hook-line-and-sinker.jpg'},
-    {nombre: 'Donde todo brilla', autor: 'Alice Kellen', generos: ["Friends to lovers", "Pueblo pequeño"] ,img: '../img/donde-todo-brilla.jpg'},
-    {nombre: 'Beach Read', autor: 'Emily Henry', generos: ["Rivals to lovers", "Spicy"] , img: '../img/beach-read.jpg'},
-    {nombre: 'The unhoneymooners', autor: 'Christina Lauren', generos: ["Fake dating", "Spicy", "Enemies to lovers", "Emprenden un viaje"] , img: '../img/the-unhoneymooners.jpg'},
+    {nombre: 'It happened one summer', autor: 'Tessa Bailey', generos: ["Age gap", "Spicy", "Pueblo pequeño", "Él se enamora primero"] , img: '../img/it-happened-one-summer.jpg'},
+    {nombre: 'Hook, line and sinker', autor: 'Tessa Bailey', generos: ["Friends to lovers", "Pueblo pequeño", "Spicy", "Convivencia forzada"] , img: '../img/hook-line-and-sinker.jpg'},
+    {nombre: 'Donde todo brilla', autor: 'Alice Kellen', generos: ["Friends to lovers", "Pueblo pequeño", "Se reencuentran después de años"] ,img: '../img/donde-todo-brilla.jpg'},
+    {nombre: 'Beach Read', autor: 'Emily Henry', generos: ["Rivals to lovers", "Spicy", "Él se enamora primero", "Se reencuentran después de años"] , img: '../img/beach-read.jpg'},
+    {nombre: 'The unhoneymooners', autor: 'Christina Lauren', generos: ["Fake dating", "Spicy", "Enemies to lovers", "Emprenden un viaje", "Convivencia forzada"] , img: '../img/the-unhoneymooners.jpg'},
     {nombre: 'Punk 57', autor: 'Penelope Douglas', generos: ["Friends to lovers", "Enemies to lovers", "Spicy"] , img: '../img/punk-57.jpg'},
-    {nombre: 'Por culpa de Miss Bridgerton', autor: 'Julia Quinn', generos: ["De época", "Enemies to lovers"] , img: '../img/por-culpa-de-miss-bridgerton.jpg'},
+    {nombre: 'Por culpa de Miss Bridgerton', autor: 'Julia Quinn', generos: ["De época", "Enemies to lovers", "Ambos POVs"] , img: '../img/por-culpa-de-miss-bridgerton.jpg'},
     {nombre: 'Belleza Oscura', autor: 'Jessica Rivas', generos: ["Guardaespaldas", "Enemies to lovers", "Mafia", "Misterio", "Grumpy x Sunshine", "Amor prohibido", "Ambos POVs", "Spicy", "Age gap"], img: '../img/belleza-oscura.jpg'},
-    {nombre: 'Un marido inventado', autor: 'Julia Quinn', generos: ["De época", "Matrimonio por conveniencia"] , img: '../img/un-marido-inventado.jpg'},
+    {nombre: 'Un marido inventado', autor: 'Julia Quinn', generos: ["De época", "Matrimonio por conveniencia", "Ambos POVs"] , img: '../img/un-marido-inventado.jpg'},
+    {nombre: 'People we meet on vacation', autor: 'Emily Henry', generos: ["Friends to lovers", "Emprenden un viaje", "Se reencuentran después de años", "Él se enamora primero", "Convivencia forzada"], img: '../img/people-we-meet-on-vacation.jpg'},
+    {nombre: 'Icebreaker', autor: 'Hannah Grace', generos: ["Rivals to lovers", "Ambos POVs", "Spicy"], img: '../img/icebreaker.jpg'},
+    {nombre: 'The Roommate', autor: 'Rosie Danan', generos: ["Convivencia forzada", "Personaje famoso", "Ambos POVs", "Spicy"], img: '../img/the-roommate.jpg'},
+    {nombre: 'El día que dejó de nevar en Alaska', autor: 'Alice Kellen', generos: ["Convivencia forzada", "Enemies to lovers", "Grumpy x Sunshine"], img: '../img/el-dia-que-dejo-de-nevar-en-alaska.jpg'},
+    {nombre: 'Todos nuestros veranos', autor: 'Carley Fortune', generos: ["Se reencuentran después de años", "Segunda oportunidad", "Friends to lovers"], img:'../img/todos-nuestros-veranos.jpg'},
+    {nombre: 'Rojo, Blanco y Sangre Azul', autor: 'Casey McQuiston', generos: ["LGBTQ+", "Amor prohibido", "Enemies to lovers", "Relación en secreto", "Personaje famoso", "Spicy"], img:'../img/rojo-blanco-y-sangre-azul.jpg'},
+    {nombre: 'Nosotros en la luna', autor: 'Alice Kellen', generos: ["Strangers to lovers"], img:'../img/nosotros-en-la-luna.jpg'},
+    {nombre: 'El faro de los amores dormidos', autor: 'Andrea Longarela', generos: ["Se reencuentran después de años", "Friends to lovers", "Ambos POVs", "Segunda oportunidad"], img:'../img/el-faro-de-los-amores-dormidos.jpg'},
+    {nombre: 'Todo lo que nunca fuimos', autor: 'Alice Kellen', generos: ["El mejor amigo del hermano", "Convivencia forzada", "Age gap", "Spicy", "Ambos POVs", "Relación en secreto", "Pueblo pequeño"], img:'../img/todo-lo-que-nunca-fuimos.jpg'},
+
 ];
 
 
