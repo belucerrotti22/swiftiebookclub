@@ -8,31 +8,33 @@ const pantallaBotonesTramas = document.querySelector('.encontra-romance');
 const containerBotonVolver = document.querySelector('.container-boton-volver');
 
 const listaLibros = [
-    {nombre: 'The Love Hypothesis', autor: 'Ali Hazelwood' , generos: ["Fake dating", "Enemies to lovers", "Age gap", "Él se enamora primero" ] , img: '../img/the-love-hypothesis.jpg'},
-    {nombre: 'The Spanish Love Deception', autor: 'Elena Armas', generos: ["Fake dating", "Enemies to lovers", "Compañeros de trabajo", "Spicy", "Emprenden un viaje", "Él se enamora primero"] , img: '../img/the-spanish-love-deception.jpg'},
-    {nombre: 'Twisted Love', autor: 'Ana Huang', generos: ["Age gap", "Spicy", "Grumpy x Sunshine", "Amor prohibido", "El mejor amigo del hermano", "Relación en secreto"] , img: '../img/twisted-love.jpg'},
-    {nombre: 'Twisted Games', autor: 'Ana Huang', generos: ["Guardaespaldas", "Amor prohibido", "Enemies to lovers", "Spicy", "Convivencia forzada"] , img: '../img/twisted-games.jpg'},
-    {nombre: 'Twisted Hate', autor: 'Ana Huang', generos: ["Enemies to lovers", "Spicy", "El hermano de la mejor amiga", "Relación en secreto"] , img: '../img/twisted-hate.jpg'},
-    {nombre: 'Twisted Lies', autor: 'Ana Huang', generos: ["Mafia", "Spicy", "Age gap"] , img: '../img/twisted-lies.jpg'},
-    {nombre: 'It happened one summer', autor: 'Tessa Bailey', generos: ["Age gap", "Spicy", "Pueblo pequeño", "Él se enamora primero"] , img: '../img/it-happened-one-summer.jpg'},
-    {nombre: 'Hook, line and sinker', autor: 'Tessa Bailey', generos: ["Friends to lovers", "Pueblo pequeño", "Spicy", "Convivencia forzada"] , img: '../img/hook-line-and-sinker.jpg'},
-    {nombre: 'Donde todo brilla', autor: 'Alice Kellen', generos: ["Friends to lovers", "Pueblo pequeño", "Se reencuentran después de años"] ,img: '../img/donde-todo-brilla.jpg'},
-    {nombre: 'Beach Read', autor: 'Emily Henry', generos: ["Rivals to lovers", "Spicy", "Él se enamora primero", "Se reencuentran después de años"] , img: '../img/beach-read.jpg'},
-    {nombre: 'The unhoneymooners', autor: 'Christina Lauren', generos: ["Fake dating", "Spicy", "Enemies to lovers", "Emprenden un viaje", "Convivencia forzada"] , img: '../img/the-unhoneymooners.jpg'},
-    {nombre: 'Punk 57', autor: 'Penelope Douglas', generos: ["Friends to lovers", "Enemies to lovers", "Spicy"] , img: '../img/punk-57.jpg'},
-    {nombre: 'Por culpa de Miss Bridgerton', autor: 'Julia Quinn', generos: ["De época", "Enemies to lovers", "Ambos POVs"] , img: '../img/por-culpa-de-miss-bridgerton.jpg'},
-    {nombre: 'Belleza Oscura', autor: 'Jessica Rivas', generos: ["Guardaespaldas", "Enemies to lovers", "Mafia", "Misterio", "Grumpy x Sunshine", "Amor prohibido", "Ambos POVs", "Spicy", "Age gap"], img: '../img/belleza-oscura.jpg'},
-    {nombre: 'Un marido inventado', autor: 'Julia Quinn', generos: ["De época", "Matrimonio por conveniencia", "Ambos POVs"] , img: '../img/un-marido-inventado.jpg'},
-    {nombre: 'People we meet on vacation', autor: 'Emily Henry', generos: ["Friends to lovers", "Emprenden un viaje", "Se reencuentran después de años", "Él se enamora primero", "Convivencia forzada"], img: '../img/people-we-meet-on-vacation.jpg'},
-    {nombre: 'Icebreaker', autor: 'Hannah Grace', generos: ["Rivals to lovers", "Ambos POVs", "Spicy"], img: '../img/icebreaker.jpg'},
-    {nombre: 'The Roommate', autor: 'Rosie Danan', generos: ["Convivencia forzada", "Personaje famoso", "Ambos POVs", "Spicy"], img: '../img/the-roommate.jpg'},
-    {nombre: 'El día que dejó de nevar en Alaska', autor: 'Alice Kellen', generos: ["Convivencia forzada", "Enemies to lovers", "Grumpy x Sunshine"], img: '../img/el-dia-que-dejo-de-nevar-en-alaska.jpg'},
-    {nombre: 'Todos nuestros veranos', autor: 'Carley Fortune', generos: ["Se reencuentran después de años", "Segunda oportunidad", "Friends to lovers"], img:'../img/todos-nuestros-veranos.jpg'},
-    {nombre: 'Rojo, Blanco y Sangre Azul', autor: 'Casey McQuiston', generos: ["LGBTQ+", "Amor prohibido", "Enemies to lovers", "Relación en secreto", "Personaje famoso", "Spicy"], img:'../img/rojo-blanco-y-sangre-azul.jpg'},
-    {nombre: 'Nosotros en la luna', autor: 'Alice Kellen', generos: ["Strangers to lovers"], img:'../img/nosotros-en-la-luna.jpg'},
-    {nombre: 'El faro de los amores dormidos', autor: 'Andrea Longarela', generos: ["Se reencuentran después de años", "Friends to lovers", "Ambos POVs", "Segunda oportunidad"], img:'../img/el-faro-de-los-amores-dormidos.jpg'},
-    {nombre: 'Todo lo que nunca fuimos', autor: 'Alice Kellen', generos: ["El mejor amigo del hermano", "Convivencia forzada", "Age gap", "Spicy", "Ambos POVs", "Relación en secreto", "Pueblo pequeño"], img:'../img/todo-lo-que-nunca-fuimos.jpg'},
-
+    {nombre: 'The Love Hypothesis', autor: 'Ali Hazelwood' , generos: ["fd", "etl", "ag", "esep", "gxs" ] , img: '../img/the-love-hypothesis.jpg'},
+    {nombre: 'The Spanish Love Deception', autor: 'Elena Armas', generos: ["fd", "etl", "cdt", "s", "euv", "esep"] , img: '../img/the-spanish-love-deception.jpg'},
+    {nombre: 'Twisted Love', autor: 'Ana Huang', generos: ["ag", "s", "gxs", "ap", "emadh", "res"] , img: '../img/twisted-love.jpg'},
+    {nombre: 'Twisted Games', autor: 'Ana Huang', generos: ["g", "ap", "etl", "s", "cf"] , img: '../img/twisted-games.jpg'},
+    {nombre: 'Twisted Hate', autor: 'Ana Huang', generos: ["etl", "s", "ehdlma", "res"] , img: '../img/twisted-hate.jpg'},
+    {nombre: 'Twisted Lies', autor: 'Ana Huang', generos: ["m", "s", "ag"] , img: '../img/twisted-lies.jpg'},
+    {nombre: 'It happened one summer', autor: 'Tessa Bailey', generos: ["ag", "gxs", "s", "pp", "esep"] , img: '../img/it-happened-one-summer.jpg'},
+    {nombre: 'Hook, line and sinker', autor: 'Tessa Bailey', generos: ["ftl", "pp", "s", "cf"] , img: '../img/hook-line-and-sinker.jpg'},
+    {nombre: 'Donde todo brilla', autor: 'Alice Kellen', generos: ["ftl", "pp", "rdda"] ,img: '../img/donde-todo-brilla.jpg'},
+    {nombre: 'Beach Read', autor: 'Emily Henry', generos: ["rtl", "s", "esep", "rdda"] , img: '../img/beach-read.jpg'},
+    {nombre: 'The unhoneymooners', autor: 'Christina Lauren', generos: ["fd", "s", "etl", "euv", "cf"] , img: '../img/the-unhoneymooners.jpg'},
+    {nombre: 'Punk 57', autor: 'Penelope Douglas', generos: ["ftl", "etl", "s"] , img: '../img/punk-57.jpg'},
+    {nombre: 'Por culpa de Miss Bridgerton', autor: 'Julia Quinn', generos: ["de", "etl", "ao"] , img: '../img/por-culpa-de-miss-bridgerton.jpg'},
+    {nombre: 'Belleza Oscura', autor: 'Jessica Rivas', generos: ["g", "etl", "m", "gxs", "ap", "ao", "s", "ag"], img: '../img/belleza-oscura.jpg'},
+    {nombre: 'Un marido inventado', autor: 'Julia Quinn', generos: ["de", "mpc", "ao"] , img: '../img/un-marido-inventado.jpg'},
+    {nombre: 'People we meet on vacation', autor: 'Emily Henry', generos: ["ftl", "euv", "rdda", "esep", "cf"], img: '../img/people-we-meet-on-vacation.jpg'},
+    {nombre: 'Icebreaker', autor: 'Hannah Grace', generos: ["rtl", "ao", "s"], img: '../img/icebreaker.jpg'},
+    {nombre: 'The Roommate', autor: 'Rosie Danan', generos: ["cf", "pf", "ao", "s"], img: '../img/the-roommate.jpg'},
+    {nombre: 'El día que dejó de nevar en Alaska', autor: 'Alice Kellen', generos: ["cf", "etl", "gxs"], img: '../img/el-dia-que-dejo-de-nevar-en-alaska.jpg'},
+    {nombre: 'Todos nuestros veranos', autor: 'Carley Fortune', generos: ["rdda", "so", "ftl"], img:'../img/todos-nuestros-veranos.jpg'},
+    {nombre: 'Rojo, Blanco y Sangre Azul', autor: 'Casey McQuiston', generos: ["lgbtq", "ap", "etl", "res", "pf", "s"], img:'../img/rojo-blanco-y-sangre-azul.jpg'},
+    {nombre: 'Nosotros en la luna', autor: 'Alice Kellen', generos: ["stl"], img:'../img/nosotros-en-la-luna.jpg'},
+    {nombre: 'El faro de los amores dormidos', autor: 'Andrea Longarela', generos: ["rdda", "ftl", "ao", "so"], img:'../img/el-faro-de-los-amores-dormidos.jpg'},
+    {nombre: 'Todo lo que nunca fuimos', autor: 'Alice Kellen', generos: ["emadh", "cf", "ag", "s", "ao", "res", "pp"], img:'../img/todo-lo-que-nunca-fuimos.jpg'},
+    {nombre: 'Fix her up', autor: 'Tessa Bailey', generos: ["emadh", "fd", "ag", "pf", "s", "pp"], img: '../img/fix-her-up.jpg'},
+    {nombre: 'Love her or lose her', autor: 'Tessa Bailey', generos: ["pp", "s", "so"], img:'../img/love-her-or-lose-her.jpg'},
+    {nombre: 'Tools of egagement', autor: 'Tessa Bailey', generos: ["rtl", "s", "pp", "ag", "gxs", "esep"], img:'../img/tools-of-engagement.jpg'}
 ];
 
 
@@ -44,20 +46,21 @@ for (let i = 0; i < botonTrama.length; i++) {
 }
 
 botonContinuar.addEventListener('click', continuar);
+let botonTramaArray = [];
 
 function continuar(event){
     event.preventDefault();
 
-    const botonTramaArray = Array.from(botonTrama);
+    botonTramaArray = Array.from(botonTrama);
 
-    let tramasSeleccionadas = botonTramaArray.filter(function(boton) {
+    const tramasSeleccionadas = botonTramaArray.filter(function(boton) {
         return boton.classList.contains("seleccionado");
     });
 
 
-    let titulosTramasSeleccionadas = [];
+    let idsTramasSeleccionadas = [];
     for (let i = 0; i < tramasSeleccionadas.length; i++) {
-        titulosTramasSeleccionadas[i] = tramasSeleccionadas[i].textContent; 
+        idsTramasSeleccionadas[i] = tramasSeleccionadas[i].getAttribute('id'); 
     }
 
 
@@ -66,7 +69,7 @@ function continuar(event){
     }else {
         textoFaltaTramas.classList.add("ocultar");
         containerBotones.classList.add("ocultar");
-        encontrarCoincidencias(titulosTramasSeleccionadas);
+        encontrarCoincidencias(idsTramasSeleccionadas);
     }
 
 }
@@ -88,8 +91,6 @@ function encontrarCoincidencias(array){
 
     }else {
         informarNoHayResultados();
-        //resultados.classList.add("ocultar");
-        //mensajeNoEncontrado.classList.remove("ocultar");
     }
 
 }
@@ -154,7 +155,7 @@ function crearContainer(libro) {
     tramasTitulo.innerHTML = 'Tramas:';
 
     const tramas = document.createElement('div');
-    tramas.innerHTML = libro.generos.join(', ');
+    tramas.innerHTML = generos(libro.generos, botonTramaArray).join(', ');
     
     infoExtra.append(tramasTitulo, tramas);
     containerTituloYAutor.append(libroTitulo, libroAutor);
@@ -164,6 +165,19 @@ function crearContainer(libro) {
 
 }
 
+function generos(generosLibro, botones){
+    let titulosTramas = [];
+    for (let i = 0; i < generosLibro.length; i++) {
+        for (let j = 0; j < botones.length; j++) {
+            if (generosLibro[i] == botones[j].getAttribute('id')){
+                titulosTramas.push(botones[j].textContent);
+                j = botones.length;
+            }
+        }
+    }
+    return titulosTramas;
+}
+
 function contieneLoPedido(array1, array2){
 
     let contiene = true;
@@ -171,7 +185,7 @@ function contieneLoPedido(array1, array2){
     for (let i = 0; i < array2.length; i++) {
         if(!(array1.includes(array2[i]))){
             contiene = false;
-        }        
+        }       
     }
     return contiene;
 
